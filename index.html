@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Admin_Dashboard</title>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="img_bg mx-auto">
+            <img style="width: 100%; margin-top: 5rem;" src="assets/PP.png">
+        </div>
+            <button class="d_btn" onclick="dashboard()">Dashboard</button>
+            <button class="d_btn" onclick="events()">Manage Events</button>
+            <button class="d_btn" onclick="coupons()">Manage Coupons</button>
+        </div>
+            
+    </div>
+    </div>
+      <div class=" d-flex col-12 align-items-center fixed-top px-3 py-3 bg_color_1">
+        <div class="d-block d-lg-none">
+            <button class="sidenav_btn" onclick="openNav()" ><i class="bi bi-list"></i></button>
+        </div>
+          <div>
+              <img src="assets/logo.png">
+          </div>
+          <div class="ms-auto">
+              <div class="dropdown align-items-center d-flex">
+                <div class="nav_btn"><img src="assets/PP.png"></div>
+                <button class="nav_font_color fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Deepak Sharma<i class="bi bi-chevron-down align-middle"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="m_body" id="main">
+        <div class="row col-12 m-auto">
+            <div class="col-3 col_3_bg d-none d-lg-block">
+                    <div class="img_bg mx-auto">
+                        <img style="width: 100%; margin-top: -6rem;" src="assets/PP.png">
+                    </div>
+                        <button class="d_btn" onclick="dashboard()">Dashboard</button>
+                        <button class="d_btn" onclick="events()">Manage Events</button>
+                        <button class="d_btn" onclick="coupons()">Manage Coupons</button>
+                    </div>
+            <div class="col-12 col-lg-9 bg_color_1 px-5 pt-5" id="dashboard">
+                <div class="content_div_style pb-5">
+                  <h1 class="font_color_1 fw-normal">Welcome Back !</h1>
+                  <h2 class="font_color_2 mt-4 fw-bold">Admin name</h2>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5">
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border align-middle">
+                                <img src="assets/icon1.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Total Users</p>
+                                    <p class="nav_font_color fs-3 fw-bold">400</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon4.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Approved User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon3.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Rejected User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center ">
+                            <div class="">
+                                <img src="assets/icon2.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Pending User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5 p-5">
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon6.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">55,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(Year 2021)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon5.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">10,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(By Events)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Total Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Upcomming Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center ">
+                            <div class="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Cancelled Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-12 col-lg-9 bg_color_1 px-5 pt-5 events" id="events">
+                <div class="content_div_style pb-5">
+                  <h1 class="font_color_1 fw-normal">Welcome Back !</h1>
+                  <h2 class="font_color_2 mt-4 fw-bold">Manage Events</h2>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5">
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border align-middle">
+                                <img src="assets/icon1.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Total Users</p>
+                                    <p class="nav_font_color fs-3 fw-bold">400</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon4.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Approved User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon3.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Rejected User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center ">
+                            <div class="">
+                                <img src="assets/icon2.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Pending User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5 p-5">
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon6.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">55,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(Year 2021)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon5.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">10,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(By Events)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Total Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Upcomming Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center ">
+                            <div class="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Cancelled Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-12 col-lg-9 bg_color_1 px-5 pt-5 coupons" id="coupons">
+                <div class="content_div_style pb-5">
+                  <h1 class="font_color_1 fw-normal">Welcome Back !</h1>
+                  <h2 class="font_color_2 mt-4 fw-bold">Manage Coupons</h2>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5">
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border align-middle">
+                                <img src="assets/icon1.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Total Users</p>
+                                    <p class="nav_font_color fs-3 fw-bold">400</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon4.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Approved User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">150</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center position-relative">
+                            <div class="disc_border">
+                                <img src="assets/icon3.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Rejected User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-3 text-center ">
+                            <div class="">
+                                <img src="assets/icon2.png" alt="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fw-bold">Pending User</p>
+                                    <p class="nav_font_color fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_div_style pb-5">
+                    <div class="row mt-5 p-5">
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon6.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">55,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(Year 2021)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-6 m-auto position-relative">
+                            <div class="d-flex p-2 m-auto align-items-center dash_border">
+                                <div class="m-auto p-2" style="height: 95px;">
+                                    <img class="width" src="assets/icon5.png" >
+                                </div>
+                                <div class="m-auto">
+                                    <h1 class="nav_font_color">10,000</h1>
+                                    <p class="fs-4 fs_n">Total Revenue</p>
+                                    <p class="text-center fs_n">(By Events)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Total Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">100</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center position-relative">
+                            <div class="disc_border">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Upcomming Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">10</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-4 text-center ">
+                            <div class="">
+                                <div class="mt-3">
+                                    <p class="font_color_1 fs-3 fw-bold">Cancelled Events</p>
+                                    <p class="font_color_1 fs-3 fw-bold">1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="d-flex mb-5 pb-5 content_div_style mx-auto " style="width: 93%;">
+                <div class="col-6 align-items-center">
+                    <div class="text-center bg_color_2 white_font rounded p-3 my-5 float-end" style="width: 60%;">
+                        <p class="fs-4">Average Ticket<br>price</p>
+                        <p class="fs-3 fw-bold">Rs.500</p>
+                    </div>
+                </div>
+                <div class="col-6 align-items-center">
+                    <div class="text-center bg_color_2 white_font rounded p-3 my-5 float-end" style="width: 60%;">
+                        <p class="fs-4">Total Discouny<br>Amount</p>
+                        <p class="fs-3 fw-bold">Rs.500</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="">
+                <div class="position-relative u_list mx-auto" style="width: 13rem;">
+                    <h1 class="mb-4" style="font-size: 3rem;">User Lists</h1>
+                </div>
+                <div style="height: 8rem;">
+                    <div class="d-flex col-11 m-auto">
+                        <div class="position-relative u_list" style="width: 8rem; height: fit-content;">
+                            <h1 style="font-size: 2rem;">All Users</h1>
+                        </div> 
+                        <div class="dropdown ms-2" style="opacity: 60%; font-size: 1.6rem;">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mutually exclusive users
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item text-end" href="#">1</a></li>
+                              <li><a class="dropdown-item text-end" href="#">2</a></li>
+                            </ul>
+                        </div>
+                        <div class="ms-auto">
+                            <div class="input-group input-group-sm mb-3" style="width: 15rem;">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                            </div>
+                            <button class="l_btn btn_csv">Save CSV</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 shadow p-3 mb-5 bg-body rounded mx-auto">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Phone No.</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="align-middle">
+                            <th scope="row">Yash Baisla</th>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>987456103</td>
+                            <td>yashbaisla@123.com</td>
+                            <td>Mumbai,in</td>
+                            <td><button class="l_btn btn_green">Screened</button></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <th scope="row">Yash Baisla</th>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>987456103</td>
+                            <td>yashbaisla@123.com</td>
+                            <td>Mumbai,in</td>
+                            <td><button class="l_btn btn_pending">Pending</button></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <th scope="row">Yash Baisla</th>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>987456103</td>
+                            <td>yashbaisla@123.com</td>
+                            <td>Mumbai,in</td>
+                            <td><button class="l_btn btn_red">Suspended</button></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <th scope="row">Yash Baisla</th>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>987456103</td>
+                            <td>yashbaisla@123.com</td>
+                            <td>Mumbai,in</td>
+                            <td><button class="l_btn btn_green">Screened</button></td>
+                          </tr>
+                          <tr class="align-middle">
+                            <th scope="row">Yash Baisla</th>
+                            <td>26</td>
+                            <td>Male</td>
+                            <td>987456103</td>
+                            <td>yashbaisla@123.com</td>
+                            <td>Mumbai,in</td>
+                            <td><button class="l_btn btn_green">Screened</button></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  <footer>
+      <div class="bg_color_2 p-3 mb-5">
+          <p class="white_font text-center fs_n">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+  </footer>
+</html>
