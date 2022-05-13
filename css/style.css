@@ -168,7 +168,7 @@
 }
 
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 575px) {
     .dropdown button{
         font-size: 1.5rem;
     }
@@ -176,7 +176,7 @@
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 575px) {
     .nav_btn img{
         width: 2.5rem;
         border-radius: 2.5rem;
