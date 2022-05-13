@@ -81,6 +81,9 @@
 .dash_border{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='20%2c 28' stroke-dashoffset='32' stroke-linecap='square'/%3e%3c/svg%3e");
 }
+.u_list{
+    width: fit-content;
+}
 .u_list::before{
     content: '';
     position: absolute;
@@ -166,11 +169,17 @@
 .head_logo{
     width: 100%;
 }
+.ul_title{
+    font-size: 2rem;
+}
 
 
 @media screen and (min-width: 575px) {
     .dropdown button{
         font-size: 1.5rem;
+    }
+    .ul_title{
+        font-size: 3rem;
     }
   }
 
@@ -178,8 +187,8 @@
 
 @media screen and (max-width: 575px) {
     .nav_btn img{
-        width: 2.5rem;
-        border-radius: 2.5rem;
+        width: 2rem;
+        border-radius: 2rem;
     }
     .disc_border::after{
         top: 100%;
