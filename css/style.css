@@ -172,6 +172,14 @@
 .ul_title{
     font-size: 2rem;
 }
+.table{
+    color: #00868E !important;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   color: #566400;
+   border: none;
+ }
 
 
 @media screen and (min-width: 575px) {
